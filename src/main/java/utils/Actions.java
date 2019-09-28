@@ -1,15 +1,17 @@
 package utils;
 
+import entites.User;
+
 import java.util.List;
 
 public interface Actions {
-    public void createEntry();
+    public void createEntry(Object currentEntry);
 
     public void deleteEntry(Object currentEntry);
 
     public void updateEntry(Object currentEntry);
 
-    public List<Object> getAllEntries();
+    public List<User> getAllEntries();
 
     public Object getEntryById(int id);
 }
